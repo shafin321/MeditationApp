@@ -23,15 +23,14 @@
         .bg-blue {
             background-color: #282D64;
         }
-      
-      .logo
 
-        {
+        .logo {
             height: 40px;
             width: auto;
             float: left;
             margin-top: 1px;
         }
+
         main {
             background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/tree.jpg');
             background-size: cover;
@@ -39,16 +38,15 @@
             height: 100vh;
         }
 
-     
+
 
         .main-nav li a:link,
         .main-nav li a:visited {
             padding: 8px 0;
             color: #fff;
             text-decoration: none;
-         
             font-size: 20px;
-            margin:20px;
+            margin: 20px;
             border-bottom: 2px solid transparent;
             -webkit-transition: border-bottom 0.2s;
             transition: border-bottom 0.2s;
@@ -58,15 +56,14 @@
         .main-nav li a:active {
             border-bottom: 2px solid #e67e22;
         }
-        
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar main-nav  navbar-expand-sm navbar-toggleable-sm navbar-dark "   style=" font-size: 90%; margin=40px ;">
-  
+        <nav class="navbar main-nav  navbar-expand-sm navbar-toggleable-sm bg-white " style=" font-size: 90%; margin=40px ;">
+
             <div class="container">
-                
+
                 <a class="navbar-brand text-dark  float-left  main-nav " asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png" alt="Omnifood logo" class="logo  float-left"></a>
 
 
@@ -106,7 +103,7 @@
             </div>
         </nav>
     </header>
-                
+
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
