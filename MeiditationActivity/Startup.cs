@@ -101,7 +101,7 @@ namespace MeiditationActivity
 			{
 				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
+					pattern: "{controller=MeditationApp}/{action=Create}/{id?}");
 				endpoints.MapRazorPages();
 			});
 		}
