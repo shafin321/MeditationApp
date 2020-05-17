@@ -64,10 +64,10 @@ namespace MeiditationActivity.Controllers
 			RangeMeter newRange = new RangeMeter
 			{
 				Created = currentDate,
-				MentalStausRate = model.MentalStausRate,
+				MentalStausRate = model.MentalStatusRate,
 				PhysicalLoad = model.PhysicalLoad,
 				PhysicalStatusRate = model.PhysicalStatusRate,
-				sleepingHour = model.sleepingHour,
+				sleepingHour = model.SleepingHour,
 				SleepQuality = model.SleepQuality,
 				User = user,
 				UserId = user.Id

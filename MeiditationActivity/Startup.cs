@@ -18,6 +18,7 @@ namespace MeiditationActivity
 {
 	public class Startup
 	{
+
 		public Startup(IConfiguration configuration)
 		{
 			Configuration = configuration;
@@ -32,9 +33,15 @@ namespace MeiditationActivity
 
 			services.AddScoped<IApplicationUser, ApplicationUserService>();
 
+			var connectionStringName = "DefaultConnection";
+			var connectionString = Configuration.GetConnectionString(connectionStringName);
+
 			services.AddDbContext<ApplicationDbContext>(options =>
-				options.UseSqlServer(
-					Configuration.GetConnectionString("DefaultConnection")));
+				{
+					options.UseSqlServer(
+						connectionString
+					);
+				});
 
 			services
 				.AddDefaultIdentity<ApplicationUser>(

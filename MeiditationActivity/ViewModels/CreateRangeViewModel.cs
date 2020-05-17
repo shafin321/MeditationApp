@@ -16,11 +16,11 @@ namespace MeiditationActivity.ViewModels
 
 		public DateTime Created { get; set; }
 
-		public int sleepingHour { get; set; }
+		public int SleepingHour { get; set; }
 		public int PhysicalLoad { get; set; }
 		public string SleepQuality { get; set; }
-		public double weight { get; set; }
-		public int MentalStausRate { get; set; }
+		public double Weight { get; set; }
+		public int MentalStatusRate { get; set; }
 		public int PhysicalStatusRate { get; set; }
 	}
 }
